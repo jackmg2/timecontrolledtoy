@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Time controlled toy</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
+
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/buttplug@0.11.2/dist/web/buttplug.min.js" defer></script>
+
+    <script type="text/javascript" src="./TimeSpan-1.2.js" defer></script>
+</head>
+
+<body>    
+    <div id="content">
+        <header>
+            
+        </header>
+
+        <div id="main">
+            <h1>Test audio sync</h1>
+            <div>
+                <section id="sctnSync" class="toys">
+                    <div id="buttons">
+                        <button id="buttplug-local-button" class="button" onclick="connectToys();">Synchroniser</button>
+                    </div>
+                </section>
+                <section id="sctnToys">
+                    <h2>Your toys</h2>
+                    <ul id="yourdevices">
+
+                    </ul>
+                </section>
+                <section id="sctnCalibration">
+                    <button id="btnTestStart" onclick="launchTest();">Test it</button>
+                    <button id="btnTestStop" onclick="stopTest();">Stop</button>
+                    <button id="btnTestReady" onclick="ready();">It's working, I'm ready!</button>
+                </section>
+                <section id="sctnPodcast">
+                    <div class="audio-player">
+                        <audio id="audio">
+                            <source id="podcastSource" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./configuration.js"></script>
+    <script type="text/javascript" src="./script.js" defer></script>
+    <script type="text/javascript">
+        new GreenAudioPlayer('.audio-player');
+    </script>
+</body>
+
+</html>

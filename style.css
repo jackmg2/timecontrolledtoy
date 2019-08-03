@@ -1,0 +1,174 @@
+body {
+    font-size: 10px;
+    background-color: rgb(168, 42, 160);
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+h1, h2, p, ul{
+    color:white;
+    font-family: Nunito,sans-serif;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 1.2rem;
+}
+
+p,li{
+    font-size: 1rem;
+}
+
+#content{
+    position: relative;
+    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.clearBoth{
+    clear:both;
+}
+
+nav ul, footer ul{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 0px;
+}
+
+nav li, footer li {
+    display: inline;    
+  }
+
+header nav ul li{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+footer ul li{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+footer ul{
+    margin-bottom: -6px;
+  }
+
+nav li a, footer li a{
+    padding: 8px;
+    font: normal normal normal 15px/1.4em futura-lt-w01-book,sans-serif;
+    cursor: pointer;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 29px;
+    text-decoration: none;
+}
+
+footer ul li a{
+    padding: 0px;
+}
+
+footer ul li a img{
+    width: 22px;
+    height: 22px;
+}
+
+header{
+    display: flex;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+header nav, footer nav{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#podcastLink{
+    float: right;
+    width: 110px;
+    height: 28px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#logo{
+    float:left;
+    width: 62px;
+    height: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#main{
+    height: 100%;
+    width:40%;
+    min-height: 100%;
+    margin: 0 auto;
+    margin-top:5%;     
+    position: relative;
+}
+
+video#bgvid {
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -110;
+    background-size: cover;
+  }
+
+  #backgroundOverlay{
+    background-color: rgba(227, 27, 34, 0.25);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -99;
+    top: 0;
+  }
+
+  button{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #FFFFFF;
+    font-family: Nunito,sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    padding: 20px 10px;
+    background-color: #FF000000;
+    border: solid #FFFFFF 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 12px;
+    margin-right: 12px;
+}
+
+button:hover {
+    background: #D04956;
+    text-decoration: none;
+ }
+
+button:disabled,
+button[disabled]{
+    border: solid rgba(255, 255, 255, 0.6) 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);;
+    cursor: default;
+}
